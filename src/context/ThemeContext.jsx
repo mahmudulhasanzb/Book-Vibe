@@ -20,7 +20,6 @@ export const ThemeProvider = ({ children }) => {
   const toggleTheme = () => {
     const newDarkMode = !isDarkMode;
     setIsDarkMode(newDarkMode);
-
     const theme = newDarkMode ? 'dark' : 'light';
     localStorage.setItem('theme', theme);
     document.documentElement.setAttribute('data-theme', theme);
